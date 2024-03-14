@@ -1,4 +1,4 @@
-# Repository for the advanced computer security class - Winter 2023
+# Repository for CAGE 2 Challenge- CyberSecurity Class Winter 2024
 
 The project uses the simulator [CybORG](https://github.com/cage-challenge/cage-challenge-2/tree/main). Please follow the [instructions](https://github.com/cage-challenge/cage-challenge-2/tree/main/CybORG) to install the simulator.
 
