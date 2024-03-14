@@ -1,0 +1,16 @@
+version: "3"
+services:
+  cage-challenge:
+    build: .
+    command: ["([[ ! -f 'models/Scenario2/red_ppo_agent.zip' ]] && python3 red_train.py); python3 red_evaluation.py"]
+    #command: ["python3 red_train.py && python3 red_evaluation.py"]
+    #command: ["python3 red_train.py"]
+    volumes:
+      - ./models:/workspace/models
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
